@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --deep-ocean: #0B3C5D;
+    --ocean-blue: #328CC1;
+    --shrimp-orange: #D9B310;
+    --sandy-beige: #F2E9D8;
+    --seaweed-green: #86BBD8;
+}
+
 @font-face {
     font-family: "Raleway";
     src: url("../fonts/Raleway-Regular.ttf") format("truetype");
@@ -11,6 +19,7 @@
 }
 
 body {
+    background-color: var(--deep-ocean);
     font-family: "Raleway", sans-serif, system-ui;
     min-height: 100vh;
 }

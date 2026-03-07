@@ -1,4 +1,4 @@
-import ".styles/global.css"
+import './styles/global.css'
 import loadHome from "./modules/home.js"
 import loadMenu from "./modules/menu.js"
 import loadAbout from "./modules/about.js"

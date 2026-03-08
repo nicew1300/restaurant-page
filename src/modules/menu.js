@@ -31,102 +31,68 @@ export default function loadMenu() {
     description.textContent = 'This is our menu! We have a lot of nice seafood dishes and all that good stuff. Unfortunately I have no idea what to put here because I have no experience with seafood whatsoever, but I hope you enjoy the website anyway! :D'
     description.classList.add('description')
 
-    // this is an even bigger mess holy moly
-    // here are the sections defined
-    // entire wrapper of all the dishes
     const dishesCont = document.createElement('div')
     dishesCont.classList.add('dishes-cont')
 
-    // first section, the "Currently Popular Dishes"
-    const featuredDishesTitle = document.createElement('h2')
-    featuredDishesTitle.textContent = 'Currently Popular Dishes'
-    featuredDishesTitle.classList.add('dishes-title')
-
-    const dishes = [
+    // Define sections with their own dishes
+    const sections = [
         {
-            text: "Shrimp Bowl",
-            imgSrc: shrimp,
+            title: 'Currently Popular Dishes',
+            dishes: [
+                { text: "Shrimp Bowl", imgSrc: shrimp },
+                { text: "Sushi Platter", imgSrc: sushi },
+                { text: "Grilled Salmon", imgSrc: salmon }
+            ]
         },
         {
-            text: "Sushi Platter",
-            imgSrc: sushi
+            title: 'Sushi Selections',
+            dishes: [
+                { text: "Nigiri Sushi", imgSrc: nigiri },
+                { text: "Sashimi Sushi", imgSrc: sashimi },
+                { text: "Maki Rolls", imgSrc: maki }
+            ]
         },
         {
-            text: "Grilled Salmon",
-            imgSrc: salmon
-        },
-
-
-        {
-            text: "Nigiri Sushi",
-            imgSrc: nigiri
+            title: 'Shellfish Selections',
+            dishes: [
+                { text: "Lobster Serving", imgSrc: lobster },
+                { text: "Crab Serving", imgSrc: crab },
+                { text: "Oysters Platter", imgSrc: oysters }
+            ]
         },
         {
-            text: "Sashimi Sushi",
-            imgSrc: sashimi
-        },
-        {
-            text: "Maki Rolls",
-            imgSrc: maki
-        },
-
-
-        {
-            text: "Lobster Serving",
-            imgSrc: lobster
-        },
-        {
-            text: "Crab Serving",
-            imgSrc: crab
-        },
-        {
-            text: "Oysters Platter",
-            imgSrc: oysters
-        },
-
-
-        {
-            text: "Sea Urchin Platter",
-            imgSrc: seaUrchin
-        },
-        {
-            text: "Geoduck Serving",
-            imgSrc: geoduck
-        },
-        {
-            text: "Monkfish Liver Serving",
-            imgSrc: monkfishLiver
+            title: 'Unique/Niche Selections',
+            dishes: [
+                { text: "Sea Urchin Platter", imgSrc: seaUrchin },
+                { text: "Geoduck Serving", imgSrc: geoduck },
+                { text: "Monkfish Liver Serving", imgSrc: monkfishLiver }
+            ]
         }
     ]
 
-    dishes.forEach(dish => {
-        const dishDiv = document.createElement("div")
-        dishDiv.classList.add("dish")
-        const dishText = document.createElement("div")
-        dishText.textContent = dish.text
-        dishText.classList.add("dish-text")
-        const dishImg = document.createElement("img")
-        dishImg.classList.add("dish-img")
-        dishImg.src = dish.imgSrc
-        dishDiv.appendChild(dishText)
-        dishDiv.appendChild(dishImg)
-        dishesCont.appendChild(dishDiv)
-    });
+    // Loop through each section
+    sections.forEach(section => {
+        const sectionTitle = document.createElement('h2')
+        sectionTitle.textContent = section.title
+        sectionTitle.classList.add('dishes-title')
+        dishesCont.appendChild(sectionTitle)
 
-    const sushiSelections = document.createElement("h2")
-    sushiSelections.textContent = "Sushi Selections"
-    sushiSelections.classList.add("dishes-title")
-        
-    const shellfishSelections = document.createElement("h2")
-    shellfishSelections.textContent = "Shellfish Selections"
-    shellfishSelections.classList.add("dishes-title")
+        // Add each dish in this section
+        section.dishes.forEach(dish => {
+            const dishDiv = document.createElement("div")
+            dishDiv.classList.add("dish")
+            const dishText = document.createElement("div")
+            dishText.textContent = dish.text
+            dishText.classList.add("dish-text")
+            const dishImg = document.createElement("img")
+            dishImg.classList.add("dish-img")
+            dishImg.src = dish.imgSrc
+            dishDiv.appendChild(dishText)
+            dishDiv.appendChild(dishImg)
+            dishesCont.appendChild(dishDiv)
+        })
+    })
 
-    const nicheSelections = document.createElement("h2")
-    nicheSelections.textContent = "Unique/Niche Selections"
-    nicheSelections.classList.add("dishes-title")
-
-    dishesCont.appendChild(featuredDishesTitle)
-    
     menu.appendChild(title)
     menu.appendChild(description)
     menu.appendChild(dishesCont)

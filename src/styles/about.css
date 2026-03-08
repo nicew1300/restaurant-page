@@ -1,0 +1,32 @@
+.about {
+    padding: 2rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--sandy-beige);
+    max-width: 80%;
+}
+
+.personal-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 70rem;
+}
+
+.about-personal {
+    /* make it a bit see through :O */
+    background-color: rgba(50, 140, 193, 0.15); 
+    border-left: 4px solid var(--shrimp-orange);
+    padding: 1.5rem;
+    border-radius: 8px;
+    line-height: 1.8;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: white;
+    cursor: default;
+}

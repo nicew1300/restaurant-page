@@ -11,7 +11,7 @@ export default function loadAbout() {
     about.classList.add("page")
 
     const title = document.createElement('h1')
-    title.textContent = 'About Me!'
+    title.textContent = 'About The Project!'
     title.classList.add('title')
 
     const description = document.createElement('p')
@@ -22,19 +22,19 @@ export default function loadAbout() {
     personalContainer.classList.add('personal-container')
 
     const personalParagraph1 = document.createElement('p')
-    personalParagraph1.textContent = "So uhh, the reason I wanted to make this project a seafood restaurant is because the first time I tried sushi, it was amazing. My friend gave it to me in school and it was so good. Oh and it was only the grocery-store bought one! So could you imagine how the real good stuff tastes??? Like damn I really wanna try it. I wanna go to a restaurant with someone and try out even more seafood."
+    personalParagraph1.textContent = "The reason I wanted to make this project a seafood restaurant is because the first time I tried sushi, it was amazing. My friend gave it to me in school and it was so good. Oh and it was only the grocery-store bought one! So could you imagine how the real good stuff tastes??? Like damn I really wanna try it. I wanna go to a restaurant with someone and try out even more seafood."
     personalParagraph1.classList.add('about-personal')
 
     const personalParagraph2 = document.createElement('p')
-    personalParagraph2.textContent = "Come to think of it, now when I imported that shrimp image, that looks so fire like do you see that? Go back to the home-page and see how good that plate looks, holyyy... Bro like give me that right now. Eli showed me how good shrimp looks multiple times. Now that I think of her, she is a pretty cool person ngl."
+    personalParagraph2.textContent = "This project involved the neawly learned npm concept with webpack stuff and all. And yes you might notice the svgs on the side that they have pretty advanced code behind them. Thats because it got vibe coded lol. There is no way i would be able to do that. Idk, I just felt like the space was too empty at the sides."
     personalParagraph2.classList.add('about-personal')
 
     const personalParagraph3 = document.createElement('p')
-    personalParagraph3.textContent = "Eli is fun to talk to and all, but for some reason I dont like how she usually needs 1h+ to respond. Like obviously life can get busy and Im not really anybody who can demand that she responds faster but idk. Same thing with homeboy. Like damn bro, do yall just throw your phones away every time you go do something? I personally get busy too, but I dont explode my phone when It's time to get busy..."
+    personalParagraph3.textContent = "Another thing I vibe coded was the sections.forEach() loop in menu.js. I made my version of that on my own but there was a weird problem with the section titles stacking on top of each other at the top... So I just popped that into github copilot and it fixed it. I still do understand it though so no worries! It was late at night so I didn't feel like solving anything complex at that point."
     personalParagraph3.classList.add('about-personal')
     
     const personalParagraph4 = document.createElement("p")
-    personalParagraph4.textContent = "I love how I can just put whatever I want here because it's MY website and most likely nobody will ever read this. If for some reason someone is actually reading this, Hello, Hi!!! I'm just writing stuff here now because it's so late, almost 11pm and I'm so unbelievably tired... Idk i just like writing what comes to mind. Idk why im doing this but oh well. I hope you enjoyed reading this if you actually read it, and if you didnt, I hope you enjoyed the website anyway! :D"
+    personalParagraph4.textContent = "Anyway, it was a really cool project and I love how webpack works. Though some things like the svg stuff and appending them can get annoying if its a lot of files. I'm sure I will get used to it though. Enjoy the website!"
     personalParagraph4.classList.add('about-personal')
 
     about.appendChild(title)

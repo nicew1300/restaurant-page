@@ -28,7 +28,7 @@ export default function loadMenu() {
     title.classList.add('title')
 
     const description = document.createElement('p')
-    description.textContent = 'This is our menu! We have a lot of nice seafood dishes and all that good stuff. Unfortunately I have no idea what to put here because I have no experience with seafood whatsoever, but I hope you enjoy the website anyway! :D'
+    description.textContent = 'This is our menu! We have a lot of nice seafood dishes, from the classical shrimp bowl and sushi platter, to the more niche sea urchin platter and geoduck serving. We have a lot of different dishes, and I hope you find something you like!'
     description.classList.add('description')
 
     const dishesCont = document.createElement('div')

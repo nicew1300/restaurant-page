@@ -8,18 +8,88 @@
     --deep-ocean: #0B3C5D;
     --ocean-blue: #328CC1;
     --shrimp-orange: #D9B310;
-    --sandy-beige: #F2E9D8;
+    --sandy-beige: #f5e6c9;
     --seaweed-green: #86BBD8;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+    src: url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
     font-display: swap;
 }
 
 body {
+    color: white;
     background-color: var(--deep-ocean);
+     background-image: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("../images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     font-family: "Raleway", sans-serif, system-ui;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    max-width: 60rem;
+}
+
+.title {
+    color: var(--sandy-beige);
+    font-size: 3rem;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.description {
+    color: white;
+    max-width: 75%;
+}
+
+header {
+    padding: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--deep-ocean);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+nav button:hover {
+    background-color: var(--shrimp-orange);
+    transform: translateY(-3px);
+}
+
+nav button:active {
+    transform: translateY(2px);
+}
+
+.active {
+    background-color: var(--seaweed-green);
+    transform: translateY(-3px);
 }

@@ -1,5 +1,6 @@
 import '../styles/global.css'
 import '../styles/about.css'
+import { homeButton, menuButton, aboutButton } from '../index.js'
 
 export default function loadAbout() {
     const content = document.getElementById('content')
@@ -7,14 +8,18 @@ export default function loadAbout() {
 
     const about = document.createElement('div')
     about.classList.add('about')
+    about.classList.add("page")
 
     const title = document.createElement('h1')
     title.textContent = 'About Me!'
-    title.classList.add('about-title')
+    title.classList.add('title')
 
     const description = document.createElement('p')
     description.textContent = "This is a website I made for a fictional seafood restaurant. I have no experience with seafood whatsoever but I really want to try it out because from what I HAVE eaten so far, it was really good! So that makes me think the rest is also very good, and I look forward to going to a restaurant that serves seafood with someone, and trying it out!"
-    description.classList.add('about-description')
+    description.classList.add('description')
+
+    const personalContainer = document.createElement('div')
+    personalContainer.classList.add('personal-container')
 
     const personalParagraph1 = document.createElement('p')
     personalParagraph1.textContent = "So uhh, the reason I wanted to make this project a seafood restaurant is because the first time I tried sushi, it was amazing. My friend gave it to me in school and it was so good. Oh and it was only the grocery-store bought one! So could you imagine how the real good stuff tastes??? Like damn I really wanna try it. I wanna go to a restaurant with someone and try out even more seafood."
@@ -34,10 +39,15 @@ export default function loadAbout() {
 
     about.appendChild(title)
     about.appendChild(description)
-    about.appendChild(personalParagraph1)
-    about.appendChild(personalParagraph2)
-    about.appendChild(personalParagraph3)
-    about.appendChild(personalParagraph4)
+    about.appendChild(personalContainer)
+    personalContainer.appendChild(personalParagraph1)
+    personalContainer.appendChild(personalParagraph2)
+    personalContainer.appendChild(personalParagraph3)
+    personalContainer.appendChild(personalParagraph4)
 
     content.appendChild(about)
+
+    aboutButton.classList.add('active')
+    menuButton.classList.remove('active')
+    homeButton.classList.remove('active')
 }

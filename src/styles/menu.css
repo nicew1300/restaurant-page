@@ -1,0 +1,52 @@
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.dishes-cont {
+    width: 60rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 1fr;
+}
+
+.dishes-title {
+    transition: all 0.3s ease;
+    color: var(--shrimp-orange);
+    font-size: 2rem;
+    align-self: center;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2 ;
+    width: fit-content;
+    justify-self: center;
+    cursor: default;
+}
+
+.dishes-title:hover {
+    text-shadow: 5px 0 10px var(--shrimp-orange);
+}
+
+.dish-img {
+    margin-top: 10px;
+    max-width: 15rem;
+    max-height: 15rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dish-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px white;
+}
+
+.dish-text {
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+/* If .dish contains an image that is being hovered
+ then apply style to the text inside it */
+.dish:has(.dish-img:hover) .dish-text {
+    text-shadow: 5px 0 10px white;
+}

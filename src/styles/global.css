@@ -43,17 +43,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* so clicks pass through */
-    z-index: 0; /* behind content */
+    pointer-events: none;
+    z-index: 0;
 }
 
 .decor {
     position: absolute;
     width: 3rem;
-    top: var(--random-top); /* or set in JS */
-    left: var(--random-left); /* or set in JS */
     opacity: 0.8;
-    pointer-events: none;
 }
 
 .page {

@@ -1,6 +1,3 @@
 # restaurant-page
-This project is part of The Odin Project Full Stack JavaScript course 
-and for this I had to learn how to use Webpack for bundling JavaScript modules 
-and managing project dependencies with npm.
-I haven't had any difficulties at all because if I forgot everything, 
-I could just go back to the webpack lesson because Odin explained it perfectly.
+This project is part of The Odin Project Full Stack JavaScript course. I built a restaurant website using HTML, CSS, and JavaScript modules, and used Webpack for bundling and managing dependencies. I focused on manipulating the DOM dynamically and making a responsive layout. I also added decorative images programmatically via JavaScript. Doing this project really helped me get better at organizing my code with Webpack and at structuring JavaScript modules for UI components.
+In this project, the newly used technologies were Webpack, npm, and dynamic DOM manipulation.

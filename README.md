@@ -1,3 +1,19 @@
 # restaurant-page
-This project is part of The Odin Project Full Stack JavaScript course. I built a restaurant website using HTML, CSS, and JavaScript modules, and used Webpack for bundling and managing dependencies. I focused on manipulating the DOM dynamically and making a responsive layout. I also added decorative images programmatically via JavaScript. Doing this project really helped me get better at organizing my code with Webpack and at structuring JavaScript modules for UI components.
-In this project, the newly used technologies were Webpack, npm, and dynamic DOM manipulation.
+Description:
+Restaurant website project from The Odin Project Full Stack JavaScript course. Built using HTML, CSS, and JavaScript modules with Webpack for bundling and dependency management. Focused on DOM manipulation, dynamic content creation, and responsive layout design.
+
+Key Features:
+
+Dynamic tab-based navigation between Home, Menu, and About pages.
+
+Responsive design with CSS Grid and Flexbox.
+
+Decorative elements and images loaded programmatically via JavaScript.
+
+Learning Outcomes:
+
+Mastered project organization with Webpack and npm.
+
+Improved DOM manipulation and styling skills.
+
+Learned to structure scalable JavaScript modules for UI components.
